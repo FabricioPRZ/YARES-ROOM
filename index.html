@@ -528,6 +528,39 @@
             header h1 {
                 font-size: 5.5rem;
             }
+
+            .about-image {
+                position: relative;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .about-image img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: var(--shadow-soft);
+                transition: all 0.3s ease;
+            }
+
+            .about-image::before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                right: 20px;
+                bottom: 20px;
+                background: var(--gradient-primary);
+                border-radius: 20px;
+                z-index: -1;
+            }
+
+            .bow{
+                top: 10px;
+                width: 10px;
+                margin-right: 25px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -551,6 +584,40 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .about-image {
+                position: relative;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .about-image img {
+                width: 100%;
+                height: 340px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: var(--shadow-soft);
+                transition: all 0.3s ease;
+            }
+
+            .about-image::before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                right: 20px;
+                bottom: 20px;
+                background: var(--gradient-primary);
+                border-radius: 20px;
+                z-index: -1;
+            }
+
+            .bow{
+                top: 10px;
+                width: 10px;
+                margin-right: 25px;
+            }
+
         }
 
         /* Animations */
@@ -597,7 +664,8 @@
 
     <header>
         <div class="header-content">
-            <img src="/Yare's Room/Logo.png" alt="Yare's Room Logo" style="width: 150px; height: auto; margin-bottom: 1rem;">
+            <img src="/Yare's Room/Logo.png" alt="Yare's Room Logo"
+                style="width: 150px; height: auto; margin-bottom: 1rem;">
             <h1>Yare's Room<span class="bow">🎀</span></h1>
             <p>Tu espacio de belleza y diseño único</p>
             <a href="#servicios" class="cta-header">Conoce nuestros servicios</a>
@@ -622,8 +690,8 @@
                     cliente.
                 </p>
                 <p>
-                    Desde cuidados clásicos hasta las tendencias más innovadoras, en mi estudio encontrarás un ambiente
-                    relajante donde la belleza y el arte se fusionan para crear experiencias inolvidables.
+                    Desde cuidados clásicos hasta las tendencias más innovadoras, donde la belleza y el arte se fusionan
+                    para crear experiencias inolvidables.
                 </p>
             </div>
         </div>
@@ -747,7 +815,8 @@
                     <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
-                    Trabajo exclusivamente con marcas profesionales de alta calidad, para garantizar los mejores resultados.
+                    Trabajo exclusivamente con marcas profesionales de alta calidad, para garantizar los mejores
+                    resultados.
                 </div>
             </div>
             <div class="faq-item">
@@ -787,7 +856,8 @@
         <h2>¡Agenda tu cita ahora!</h2>
         <p>Transforma tu look con nuestros servicios profesionales</p>
         <div class="cta-buttons">
-            <a href="https://wa.me/529651208937?text=%C2%A1Hola!%2C%20quisiera%20hacer%20una%20cita%20para%20el%20d%C3%ADa%20(tu%20d%C3%ADa)%20a%20las%20(tu%20hora)%2C%20para%20el%20servicio%20de%20(tu%20servicio).%20(En%20caso%20de%20u%C3%B1as%20adjunta%20tu%20dise%C3%B1o)." class="cta-button primary" target="_blank">
+            <a href="https://wa.me/529651208937?text=%C2%A1Hola!%2C%20quisiera%20hacer%20una%20cita%20para%20el%20d%C3%ADa%20(tu%20d%C3%ADa)%20a%20las%20(tu%20hora)%2C%20para%20el%20servicio%20de%20(tu%20servicio).%20(En%20caso%20de%20u%C3%B1as%20adjunta%20tu%20dise%C3%B1o)."
+                class="cta-button primary" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 WhatsApp
             </a>
